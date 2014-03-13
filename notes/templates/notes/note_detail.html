@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Note Detail</h1>
+    <p>{{ note.note }}</p>
+    <p>Updated: {{ note.timestamp|date }} {{ note.timestamp|time }}</p>
+{% endblock %}
