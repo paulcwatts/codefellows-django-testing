@@ -18,3 +18,9 @@ body {
 .note-list > li:first-child {
   border-top: solid 1px gray;
 }
+
+form label,
+form textarea,
+form [type=submit] {
+  display: block;
+}

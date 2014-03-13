@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block body %}
     <h1>Notes</h1>
+    <a href="{% url 'note-add' %}">Add note</a>
     {% if notes %}
         <ul class="note-list">
             {% for note in notes %}
