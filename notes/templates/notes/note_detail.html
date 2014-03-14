@@ -3,4 +3,9 @@
     <h1>Note Detail</h1>
     <p>{{ note.note }}</p>
     <p>Updated: {{ note.timestamp|date }} {{ note.timestamp|time }}</p>
+    <p>
+        <a href="{% url 'note-list' %}" %}>Back to list</a> |
+        <a href="{% url 'note-update' pk=note.pk %}">Edit note</a> |
+        <a href="{% url 'note-delete' pk=note.pk %}">Delete note</a>
+    </p>
 {% endblock %}
