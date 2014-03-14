@@ -24,3 +24,7 @@ form textarea,
 form [type=submit] {
   display: block;
 }
+
+.note-add-link {
+  margin-bottom: 5px;
+}
