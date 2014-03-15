@@ -2,10 +2,10 @@ from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.utils import formats
 
-from .models import Note
+from notes.models import Note
 
 
-class ViewTest(TestCase):
+class ViewsTest(TestCase):
     def test_empty_list(self):
         "Viewing an empty list shows the list empty hint text with the add note link"
         response = self.client.get(reverse('note-list'))
