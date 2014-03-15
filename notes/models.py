@@ -6,6 +6,9 @@ class Note(models.Model):
     note = models.CharField(max_length=2000)
     timestamp = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        ordering = ('-timestamp',)
+
     def get_absolute_url(self):
         return reverse('note-detail', kwargs={'pk': self.pk})
 
