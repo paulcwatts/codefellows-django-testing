@@ -2,3 +2,5 @@
 .*.swp
 .idea/
 db.sqlite3
+.tox/
+codefellows_django_testing.egg-info/
