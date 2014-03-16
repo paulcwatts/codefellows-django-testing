@@ -77,7 +77,7 @@ class ViewsTest(TestCase):
         self.assertContains(response, '<h1>Edit note</h1>')
         self.assertContains(response, '<button type="submit">Save</button>', html=True)
         self.assertContains(response, """
-            <textarea cols="40" id="id_note" name="note" rows="10">
+            <textarea autofocus="" cols="40" id="id_note" name="note" rows="10">
                 Remember to write unit tests.
             </textarea>""", html=True)
 
