@@ -3,8 +3,9 @@ python:
   - "2.7"
 env:
   - DJANGO="django==1.6.2"
+  - WEBTEST_DRIVER="PhantomJS"
 install:
   - pip install $DJANGO
   - pip install -r requirements.txt
 script:
-  - python manage.py test
+  - python manage.py test --liveserver=localhost:8090-8100
